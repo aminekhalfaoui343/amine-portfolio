@@ -1,4 +1,5 @@
 import Navbar from "@/components/layout/navbar";
+import Hero from "@/components/sections/hero";
 
 export default function Home() {
   return (
@@ -6,33 +7,26 @@ export default function Home() {
       <Navbar />
 
       <main>
-        <section
-          id="home"
-          className="flex min-h-screen items-center justify-center bg-background text-foreground"
-        >
-          <h1 className="text-3xl font-bold">
-            Welcome to Amine's Portfolio
-          </h1>
+        <Hero />
+
+        <section id="about" className="min-h-60 p-20">
+          About section coming soon
         </section>
 
-        <section id="about" className="min-h-screen p-20">
-          About
+        <section id="skills" className="min-h-60 p-20">
+          Skills section coming soon
         </section>
 
-        <section id="skills" className="min-h-screen p-20">
-          Skills
+        <section id="projects" className="min-h-60 p-20">
+          Projects section coming soon
         </section>
 
-        <section id="projects" className="min-h-screen p-20">
-          Projects
+        <section id="experience" className="min-h-60 p-20">
+          Experience section coming soon
         </section>
 
-        <section id="experience" className="min-h-screen p-20">
-          Experience
-        </section>
-
-        <section id="contact" className="min-h-screen p-20">
-          Contact
+        <section id="contact" className="min-h-60 p-20">
+          Contact section coming soon
         </section>
       </main>
     </>
