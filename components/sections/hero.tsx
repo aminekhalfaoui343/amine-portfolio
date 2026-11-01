@@ -3,13 +3,10 @@ import {
   ArrowRight,
   Download,
   Mail,
-  Cloud,
-  Terminal,
-  Server,
-  Container,
 } from "lucide-react";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Image from "next/image";
 
 const technologies = [
   "AWS",
@@ -132,87 +129,42 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right: Cloud & DevOps visual */}
-        <div className="relative hidden lg:flex lg:justify-center">
-          <div className="w-full max-w-md rounded-2xl border border-border bg-surface p-6 shadow-2xl shadow-primary/5">
+        
+        {/* Right: Professional portrait */}
+        <div className="relative flex justify-center lg:justify-end">
+          {/* Background decoration */}
+          <div className="absolute inset-8 rounded-full bg-primary/15 blur-3xl" />
 
-            <div className="mb-6 flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <Terminal size={20} className="text-primary" />
-                <span className="font-semibold text-foreground">
-                  cloud-infrastructure
-                </span>
-              </div>
+          {/* Image container */}
+          <div className="relative aspect-square w-full max-w-[420px] overflow-hidden rounded-3xl border border-border bg-surface shadow-2xl shadow-primary/10">
 
-              <div className="flex gap-1.5">
-                <span className="h-2.5 w-2.5 rounded-full bg-red-400" />
-                <span className="h-2.5 w-2.5 rounded-full bg-yellow-400" />
-                <span className="h-2.5 w-2.5 rounded-full bg-green-400" />
-              </div>
-            </div>
+            <Image
+              src="/images/profile.jpg"
+              alt="Portrait of Amine Khalfaoui"
+              fill
+              priority
+              sizes="(max-width: 1024px) 90vw, 420px"
+              className="object-cover object-center"
+            />
 
-            <div className="space-y-5">
+            {/* Subtle image overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
 
-              <div className="flex items-center gap-4 rounded-xl border border-border p-4">
-                <div className="rounded-lg bg-primary/10 p-3 text-primary">
-                  <Cloud size={25} />
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">
-                    Cloud Infrastructure
-                  </p>
-                  <p className="text-sm text-muted">
-                    AWS · Networking · Architecture
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4 rounded-xl border border-border p-4">
-                <div className="rounded-lg bg-primary/10 p-3 text-primary">
-                  <Container size={25} />
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">
-                    Containerization
-                  </p>
-                  <p className="text-sm text-muted">
-                    Docker · Kubernetes
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4 rounded-xl border border-border p-4">
-                <div className="rounded-lg bg-primary/10 p-3 text-primary">
-                  <Server size={25} />
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">
-                    DevOps Automation
-                  </p>
-                  <p className="text-sm text-muted">
-                    Jenkins · CI/CD · Linux
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-6 rounded-xl bg-background p-4 font-mono text-sm">
-              <p className="text-muted">
-                $ deploy --environment production
+            {/* Professional label */}
+            <div className="absolute bottom-5 left-5 right-5 rounded-xl border border-white/20 bg-black/50 p-4 backdrop-blur-md">
+              <p className="text-sm font-semibold text-white">
+                Cloud & DevOps Engineer
               </p>
-              <p className="mt-2 text-green-500">
-                ✓ Infrastructure ready
-              </p>
-              <p className="text-green-500">
-                ✓ Deployment successful
-              </p>
-              <p className="mt-2 text-primary">
-                $ _
+              <p className="mt-1 text-xs text-white/75">
+                Cloud Infrastructure · Automation · Kubernetes
               </p>
             </div>
-
           </div>
+
+          {/* Decorative corner */}
+          <div className="absolute -bottom-4 -right-4 -z-10 h-32 w-32 rounded-3xl border border-primary/30" />
         </div>
+
 
       </div>
 

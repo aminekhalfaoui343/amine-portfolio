@@ -1,6 +1,8 @@
 import Navbar from "@/components/layout/navbar";
 import Hero from "@/components/sections/hero";
 import About from "@/components/sections/about";
+import Skills from "@/components/sections/skills";
+import Projects from "@/components/sections/projects";
 
 export default function Home() {
   return (
@@ -9,16 +11,9 @@ export default function Home() {
 
       <main>
         <Hero />
-
         <About />
-
-        <section id="skills" className="min-h-60 p-20">
-          Skills section coming soon
-        </section>
-
-        <section id="projects" className="min-h-60 p-20">
-          Projects section coming soon
-        </section>
+        <Skills />
+        <Projects />
 
         <section id="experience" className="min-h-60 p-20">
           Experience section coming soon
