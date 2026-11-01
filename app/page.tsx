@@ -1,5 +1,6 @@
 import Navbar from "@/components/layout/navbar";
 import Hero from "@/components/sections/hero";
+import About from "@/components/sections/about";
 
 export default function Home() {
   return (
@@ -9,9 +10,7 @@ export default function Home() {
       <main>
         <Hero />
 
-        <section id="about" className="min-h-60 p-20">
-          About section coming soon
-        </section>
+        <About />
 
         <section id="skills" className="min-h-60 p-20">
           Skills section coming soon
