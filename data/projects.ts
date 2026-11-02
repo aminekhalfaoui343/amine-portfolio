@@ -5,6 +5,7 @@ export interface Project {
   technologies: string[];
   category: string;
   highlights: string[];
+  image: string;
   github?: string;
   demo?: string;
   featured: boolean;
@@ -30,7 +31,8 @@ export const projects: Project[] = [
       "Integration of local language models",
       "Containerized application services",
     ],
-    github: "https://github.com/aminekhalfaoui343/AI_Powered_Jobs.git",
+    image: "/images/projects/ai-job-platform.jpeg",
+    github: "https://github.com/aminekhalfaoui343/AI_Powered_Jobs",
     featured: true,
   },
   {
@@ -53,6 +55,7 @@ export const projects: Project[] = [
       "Artifact management with Nexus",
       "Container image deployment to AWS",
     ],
+    image: "/images/projects/vprofile.jpg",
     github: "https://github.com/aminekhalfaoui343/vprofile-project",
     featured: true,
   },
@@ -75,7 +78,8 @@ export const projects: Project[] = [
       "Service and network configuration",
       "Cluster troubleshooting and management",
     ],
-    github: "https://github.com/aminekhalfaoui343/k8s-fleetman-pipline.git",
+    image: "/images/projects/fleetman-kubernetes.jpg",
+    github: "https://github.com/aminekhalfaoui343/k8s-fleetman-pipline",
     featured: true,
   },
   {
@@ -95,6 +99,7 @@ export const projects: Project[] = [
       "Automated build workflows",
       "Application containerization",
     ],
+    image: "/images/projects/jenkins-pipeline.jpg",
     featured: false,
   },
 ];

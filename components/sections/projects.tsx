@@ -6,6 +6,7 @@ import {
   Layers3,
 } from "lucide-react";
 
+import Image from "next/image";
 import { FaGithub} from "react-icons/fa";
 
 import { projects } from "@/data/projects";
@@ -44,21 +45,22 @@ export default function Projects() {
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/5"
             >
               {/* Project visual header */}
-              <div className="relative flex h-44 items-center justify-center overflow-hidden bg-primary/5">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/5" />
-
-                <Layers3
-                  size={64}
-                  strokeWidth={1}
-                  className="relative text-primary/60 transition-transform duration-500 group-hover:scale-110"
+              <div className="relative h-52 overflow-hidden bg-background">
+                <Image
+                  src={project.image}
+                  alt={`${project.title} screenshot`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
 
                 {project.featured && (
-                  <span className="absolute right-4 top-4 rounded-full border border-primary/20 bg-background px-3 py-1 text-xs font-semibold text-primary">
+                  <span className="absolute right-4 top-4 rounded-full border border-primary/20 bg-background/90 px-3 py-1 text-xs font-semibold text-primary">
                     Featured
                   </span>
                 )}
               </div>
+
 
               {/* Project information */}
               <div className="flex flex-1 flex-col p-6">
