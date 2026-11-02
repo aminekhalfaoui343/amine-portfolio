@@ -3,6 +3,9 @@ import Hero from "@/components/sections/hero";
 import About from "@/components/sections/about";
 import Skills from "@/components/sections/skills";
 import Projects from "@/components/sections/projects";
+import Experience from "@/components/sections/experience";
+import Contact from "@/components/sections/contact";
+import Footer from "@/components/layout/footer";
 
 export default function Home() {
   return (
@@ -14,14 +17,9 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
-
-        <section id="experience" className="min-h-60 p-20">
-          Experience section coming soon
-        </section>
-
-        <section id="contact" className="min-h-60 p-20">
-          Contact section coming soon
-        </section>
+        <Experience />
+        <Contact />
+        <Footer />
       </main>
     </>
   );
