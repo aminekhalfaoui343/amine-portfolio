@@ -1,37 +1,146 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Amine Khalfaoui — Cloud & DevOps Portfolio
 
-## Getting Started
+A personal portfolio website showcasing my background, technical skills, projects, and professional experiences in **Cloud Computing, DevOps, and Infrastructure Engineering**.
 
-First, run the development server:
+Built with Next.js, TypeScript, and Tailwind CSS, the portfolio provides a responsive and modern experience with support for light and dark themes.
+
+## 🌐 Live Demo
+
+Coming soon.
+
+## 👨‍💻 About Me
+
+I'm a final-year Computer Science Engineering student specializing in Cloud Computing.
+
+I'm passionate about cloud infrastructure, automation, container orchestration, and DevOps practices. I enjoy designing and deploying infrastructure, building CI/CD pipelines, and exploring modern cloud-native technologies.
+
+I'm currently looking for a **Final-Year Project (PFE) Internship for 2027** in Cloud Computing, DevOps, or Infrastructure Engineering.
+
+## ✨ Features
+
+- **Responsive Design:** Optimized for desktop, tablet, and mobile devices.
+- **Dark & Light Mode:** Theme switching with system preference support.
+- **Hero Section:** Introduction, professional headline, and CV download.
+- **About Me:** Background, interests, and engineering profile.
+- **Technical Skills:** Organized technical skills and technologies.
+- **Projects Showcase:** Selected projects with descriptions, technologies, and GitHub links.
+- **Professional Experience:** Internship experiences and technical achievements.
+- **Contact Section:** Direct links to email, GitHub, and LinkedIn.
+- **Modern UI:** Clean layouts, subtle transitions, and consistent styling.
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Next.js 16 | React framework |
+| React 19 | User interface |
+| TypeScript | Type safety |
+| Tailwind CSS 4 | Styling and responsive design |
+| next-themes | Theme management |
+| Lucide React | Interface icons |
+| React Icons | Social and brand icons |
+
+## 📂 Project Structure
+
+```text
+amine-portfolio/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── layout/
+│   │   ├── navbar.tsx
+│   │   └── footer.tsx
+│   ├── sections/
+│   │   ├── hero.tsx
+│   │   ├── about.tsx
+│   │   ├── skills.tsx
+│   │   ├── projects.tsx
+│   │   ├── experience.tsx
+│   │   └── contact.tsx
+│   ├── ui/
+│   │   └── theme-toggle.tsx
+│   └── providers.tsx
+├── data/
+│   ├── projects.ts
+│   ├── skills.ts
+│   └── experience.ts
+├── public/
+│   ├── images/
+│   │   └── projects/
+│   └── cv.pdf
+├── package.json
+└── README.md
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have installed:
+
+- Node.js
+- npm
+- Git
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/aminekhalfaoui343/amine-portfolio.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd amine-portfolio
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 5. Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+### 6. Run the production server
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Featured Projects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Some of the projects presented in this portfolio include:
 
-## Deploy on Vercel
+- **AI-Powered Job Market Intelligence Platform:** An asynchronous job discovery and LLM-based data extraction platform using FastAPI, Redis, ARQ, and PostgreSQL.
+- **vProfile — CI/CD & AWS Deployment:** A DevOps project involving Jenkins, Maven, SonarQube, Nexus, Docker, and AWS.
+- **Kubernetes Fleetman Deployment:** A multi-node Kubernetes deployment and container orchestration project.
+- **Jenkins CI/CD Automation Lab:** Practical CI/CD pipeline implementation and automation.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Explore the individual projects and their repositories through the portfolio.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# amine-portfolio" 
+## 📬 Contact
+
+I'm open to PFE internship opportunities and technical collaborations.
+
+- **Email:** aminekhalfaoui343@gmail.com
+- **GitHub:** [aminekhalfaoui343](https://github.com/aminekhalfaoui343)
+- **LinkedIn:** [Amine Khalfaoui](https://www.linkedin.com/in/khalfaoui-amine-824371385/)
+
+## 📄 License
+
+This project is a personal portfolio developed by Amine Khalfaoui. All rights reserved unless otherwise specified.
