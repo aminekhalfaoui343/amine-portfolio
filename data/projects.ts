@@ -79,7 +79,6 @@ export const projects: Project[] = [
       "Cluster troubleshooting and management",
     ],
     image: "/images/projects/fleetman-kubernetes.jpg",
-    github: "https://github.com/aminekhalfaoui343/k8s-fleetman-pipline",
     featured: true,
   },
   {
